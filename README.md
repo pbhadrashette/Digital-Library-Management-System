@@ -272,21 +272,18 @@ The application can be deployed as separate frontend and API services or behind 
 
 ### API deployment
 
-1. Provision a Node.js service from the repository.
-2. Set the start command to `npm run server`.
-3. Configure `MONGODB_URI` with a private MongoDB Atlas connection string.
-4. Configure `PORT` from the provider's injected port, if required.
-5. Add `GEMINI_API_KEY` only when AI features are enabled.
-6. Restrict CORS to the deployed frontend origin and enable HTTPS.
+1. In MongoDB Atlas, create a database user, create a database such as `lumen_library`, and add Render's outbound IP access. For a simple deployment, `0.0.0.0/0` is allowed, but use a restricted range when your plan supports stable egress IPs.
+2. Create a Render **Web Service** from this repository. Use `npm ci` as the build command and `npm run server` as the start command. The included `render.yaml` can also be used as a Blueprint.
+3. Add `NODE_ENV=production`, `MONGODB_URI=<your Atlas connection string>`, and `CORS_ORIGIN=<your Vercel URL>` in Render environment variables. Add `GEMINI_API_KEY` only when AI features are enabled.
+4. Verify the service at `https://<render-service>.onrender.com/health` before connecting the frontend.
 
 ### Frontend deployment
 
-1. Provision a static Node/Vite site.
-2. Install dependencies with `npm install`.
-3. Build with `npm run build`.
-4. Serve the generated `dist/` directory.
-5. Configure the production API base URL in the client service before building, or route `/api` through the same domain using a reverse proxy.
-6. Configure SPA fallback to serve `index.html` for client-side routes.
+1. Import the repository into Vercel with the project root as the root directory.
+2. Use `npm run build` as the build command and `dist` as the output directory. The included `vercel.json` configures this automatically.
+3. Add `VITE_API_URL=https://<render-service>.onrender.com/api` in Vercel environment variables for Production, Preview, and Development as needed.
+4. Redeploy after setting the variable. Then replace Render's `CORS_ORIGIN` with the final Vercel domain and redeploy the API.
+5. For custom domains, include the exact `https://` origin in `CORS_ORIGIN`; separate multiple origins with commas.
 
 ### Deployment checklist
 

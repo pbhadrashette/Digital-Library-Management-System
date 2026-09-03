@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: lumen-library-api
+    runtime: node
+    buildCommand: npm ci
+    startCommand: npm run server
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: CORS_ORIGIN
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
