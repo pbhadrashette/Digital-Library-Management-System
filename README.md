@@ -2,30 +2,6 @@
 
 A full-stack digital library web application built with **React + Vite** (frontend) and **Node.js + Express + MongoDB** (backend).
 
----
-
-## 📁 Project Structure
-
-Digital Library Management System/
-├── src/                         # Primary React application
-│   ├── App.jsx                  # Member-facing routes and views
-│   ├── App.css                  # Main application styles
-│   ├── main.jsx                 # React entry point
-│   ├── admin/                   # Admin shell and admin pages
-│   │   ├── AdminApp.jsx
-│   │   └── pages/
-│   ├── context/AuthContext.jsx  # Authentication state and actions
-│   └── services/api-backend.js  # Primary API client and local session helpers
-├── server.js                    # Primary Express API, schemas, seed data, and routes
-├── public/                      # Primary static assets
-├── frontend/                    # Alternate standalone Vite frontend
-├── backend/                     # Alternate minimal Express backend
-├── api.js                       # Additional API/server implementation kept in the project
-├── .env.example                 # Safe environment-variable template
-├── package.json                 # Root scripts and dependencies
-├── package-lock.json            # Reproducible root dependency lockfile
-└── vite.config.js               # Root Vite configuration
-
 ## How the Application Works
 
 1. Vite serves the React client during development and builds static assets for production.
