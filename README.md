@@ -25,20 +25,6 @@ Digital Library Management System/
 ├── package.json                 # Root scripts and dependencies
 ├── package-lock.json            # Reproducible root dependency lockfile
 └── vite.config.js               # Root Vite configuration
-```
-
-## System Architecture
-
-```mermaid
-flowchart LR
-	Browser[Member or Admin Browser] --> React[React + Vite Client]
-	React --> Context[AuthContext and API Client]
-	Context --> Express[Express REST API]
-	Express --> Auth[Auth and role checks]
-	Express --> Mongo[(MongoDB)]
-	Express -. optional .-> Gemini[Google Gemini API]
-	Express --> Logs[Activity and notification records]
-```
 
 ## How the Application Works
 
