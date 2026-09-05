@@ -127,19 +127,6 @@ sequenceDiagram
 	API-->>UI: JSON success or error response
 ```
 
-## Database Design
-
-### Collections
-
-| Collection | Important fields | Relationships |
-| --- | --- | --- |
-| `users` | `fullName`, `email`, `passwordHash`, profile fields, `isAdmin` | Referenced by borrows, favorites, notifications, and activity logs |
-| `books` | `bookId`, `title`, `author`, `category`, `availability`, metadata | Referenced by borrows and favorites |
-| `borrowrecords` | `userId`, `bookId`, `borrowDate`, `dueDate`, `returnDate`, `status` | References one user and one book |
-| `favorites` | `userId`, `bookId` | Unique compound index prevents duplicate favorites |
-| `notifications` | `userId`, `message`, `type`, `read` | Belongs to one user |
-| `activitylogs` | `adminId`, `adminName`, `action`, `target`, `details` | Records administrator actions |
-
 ## Authentication and Security
 
 Current safeguards include:
