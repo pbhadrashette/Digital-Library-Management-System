@@ -140,61 +140,6 @@ sequenceDiagram
 | `notifications` | `userId`, `message`, `type`, `read` | Belongs to one user |
 | `activitylogs` | `adminId`, `adminName`, `action`, `target`, `details` | Records administrator actions |
 
-### Entity relationship diagram
-
-```mermaid
-erDiagram
-	USER ||--o{ BORROW_RECORD : creates
-	BOOK ||--o{ BORROW_RECORD : appears_in
-	USER ||--o{ FAVORITE : saves
-	BOOK ||--o{ FAVORITE : is_saved
-	USER ||--o{ NOTIFICATION : receives
-	USER ||--o{ ACTIVITY_LOG : writes
-
-	USER {
-		ObjectId _id PK
-		string fullName
-		string email UK
-		string passwordHash
-		boolean isAdmin
-	}
-	BOOK {
-		ObjectId _id PK
-		int bookId UK
-		string title
-		string author
-		string category
-		string availability
-	}
-	BORROW_RECORD {
-		ObjectId _id PK
-		ObjectId userId FK
-		ObjectId bookId FK
-		date borrowDate
-		date dueDate
-		date returnDate
-		string status
-	}
-	FAVORITE {
-		ObjectId _id PK
-		ObjectId userId FK
-		ObjectId bookId FK
-	}
-	NOTIFICATION {
-		ObjectId _id PK
-		ObjectId userId FK
-		string message
-		boolean read
-	}
-	ACTIVITY_LOG {
-		ObjectId _id PK
-		ObjectId adminId FK
-		string action
-		string target
-		string details
-	}
-```
-
 ## Authentication and Security
 
 Current safeguards include:
