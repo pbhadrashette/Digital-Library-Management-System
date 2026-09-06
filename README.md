@@ -179,16 +179,6 @@ The application can be deployed as separate frontend and API services or behind 
 4. Redeploy after setting the variable. Then replace Render's `CORS_ORIGIN` with the final Vercel domain and redeploy the API.
 5. For custom domains, include the exact `https://` origin in `CORS_ORIGIN`; separate multiple origins with commas.
 
-### Deployment checklist
-
-- [ ] Production MongoDB database and least-privilege database user configured
-- [ ] Secrets stored in provider environment settings, never in Git
-- [ ] Development admin seed credentials removed or replaced
-- [ ] Production CORS and API URL configured
-- [ ] HTTPS enabled
-- [ ] Logs and health monitoring configured
-- [ ] `npm run build` and `npm run lint` pass in CI
-
 ## Screenshots
 
 The repository currently includes the application UI assets but does not yet contain a committed screenshot gallery. For a GitHub presentation, capture these views after starting the app and place optimized images in `docs/screenshots/`:
