@@ -83,22 +83,6 @@ The base URL is `http://localhost:5000/api` in local development. Protected memb
 | PUT | `/notifications/:id/read` | Mark one notification as read |
 | PUT | `/notifications/read-all` | Mark all notifications as read |
 
-### Admin operations
-
-| Method | Endpoint | Description |
-| --- | --- | --- |
-| GET | `/admin/stats` | Dashboard totals and circulation aggregates |
-| GET | `/admin/users` | Search and paginate users |
-| POST | `/admin/users` | Create a user |
-| PUT | `/admin/users/:id` | Update a user or password |
-| DELETE | `/admin/users/:id` | Delete a user and related records |
-| POST | `/admin/books` | Create a catalog entry |
-| PUT | `/admin/books/:id` | Update a catalog entry |
-| DELETE | `/admin/books/:id` | Delete a catalog entry and related records |
-| GET | `/admin/borrow-records` | Search and paginate circulation records |
-| PUT | `/admin/borrow-records/:id/return` | Mark a borrow as returned |
-| GET | `/admin/activity-logs` | Read administrator activity history |
-
 ### AI operations
 
 | Method | Endpoint | Description |
@@ -144,14 +128,6 @@ The build verifies that the React production bundle can be generated. The linter
 ## Deployment
 
 The application can be deployed as separate frontend and API services or behind one reverse proxy.
-
-### API deployment
-
-1. In MongoDB Atlas, create a database user, create a database such as `lumen_library`, and add Render's outbound IP access. For a simple deployment, `0.0.0.0/0` is allowed, but use a restricted range when your plan supports stable egress IPs.
-2. Create a Render **Web Service** from this repository. Use `npm ci` as the build command and `npm run server` as the start command. The included `render.yaml` can also be used as a Blueprint.
-3. Add `NODE_ENV=production`, `MONGODB_URI=<your Atlas connection string>`, and `CORS_ORIGIN=<your Vercel URL>` in Render environment variables. Add `GEMINI_API_KEY` only when AI features are enabled.
-4. Verify the service at `https://<render-service>.onrender.com/health` before connecting the frontend.
-
 ### Frontend deployment
 
 1. Import the repository into Vercel with the project root as the root directory.
