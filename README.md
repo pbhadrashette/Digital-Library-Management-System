@@ -108,25 +108,6 @@ The base URL is `http://localhost:5000/api` in local development. Protected memb
 | POST | `/admin/ai/chat` | Ask the library admin assistant a question |
 | GET | `/admin/ai/insights` | Generate a library health summary |
 
-### API flow
-
-```mermaid
-sequenceDiagram
-	participant UI as React Client
-	participant API as Express API
-	participant DB as MongoDB
-	participant AI as Gemini API
-
-	UI->>API: Request with x-user-id header
-	API->>DB: Validate user and query data
-	DB-->>API: User, book, or report data
-	alt Admin AI request
-		API->>AI: Server-side prompt with library context
-		AI-->>API: Generated result
-	end
-	API-->>UI: JSON success or error response
-```
-
 ## Authentication and Security
 
 Current safeguards include:
