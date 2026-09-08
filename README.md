@@ -102,22 +102,6 @@ npm run lint
 ```
 
 The build verifies that the React production bundle can be generated. The linter checks JavaScript and JSX for common problems. An integration test suite and API contract tests are recommended future additions.
-
-## Deployment
-
-The application can be deployed as separate frontend and API services or behind one reverse proxy.
-### Frontend deployment
-
-1. Import the repository into Vercel with the project root as the root directory.
-2. Use `npm run build` as the build command and `dist` as the output directory. The included `vercel.json` configures this automatically.
-3. Add `VITE_API_URL=https://<render-service>.onrender.com/api` in Vercel environment variables for Production, Preview, and Development as needed.
-4. Redeploy after setting the variable. Then replace Render's `CORS_ORIGIN` with the final Vercel domain and redeploy the API.
-5. For custom domains, include the exact `https://` origin in `CORS_ORIGIN`; separate multiple origins with commas.
-
-## Screenshots
-
-The repository currently includes the application UI assets but does not yet contain a committed screenshot gallery. For a GitHub presentation, capture these views after starting the app and place optimized images in `docs/screenshots/`:
-
 | Screenshot | Suggested filename | What it should show |
 | --- | --- | --- |
 | Library home | `library-home.png` | Catalog hero, search, categories, and featured books |
