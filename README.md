@@ -92,28 +92,6 @@ The base URL is `http://localhost:5000/api` in local development. Protected memb
 | POST | `/admin/ai/chat` | Ask the library admin assistant a question |
 | GET | `/admin/ai/insights` | Generate a library health summary |
 
-## Authentication and Security
-
-Current safeguards include:
-
-- `.env`, `.env.*`, and local dependency/build directories are excluded by Git ignore rules.
-- Password hashes, rather than plaintext passwords, are stored in MongoDB.
-- Serialized user responses omit `passwordHash`.
-- Admin endpoints use a dedicated `requireAdmin` middleware.
-- Users cannot delete their own admin account through the admin API.
-- User and book deletion cleans up related borrow, favorite, and notification data where applicable.
-- The Gemini key is read server-side and is never exposed in client code.
-- Request body limits reduce the risk of unexpectedly large JSON or form payloads.
-
-Before production deployment, address these hardening items:
-
-- Replace the current SHA-256 password hashing with a slow password KDF such as Argon2id or bcrypt.
-- Replace the client-controlled `x-user-id` session approach with signed, expiring HTTP-only cookies or short-lived JWT access tokens with refresh-token rotation.
-- Remove hard-coded development admin credentials and provision the first administrator through a secure migration or deployment secret.
-- Add rate limiting, stricter CORS origins, request validation, HTTPS, CSRF protection where cookie auth is used, and centralized error monitoring.
-- Keep MongoDB credentials and the Gemini key in the deployment provider's secret manager.
-- Never upload `.env`, database dumps, private keys, or service-account files.
-
 ## Testing and Quality Checks
 
 Run the available checks from the repository root:
