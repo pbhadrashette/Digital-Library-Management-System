@@ -13,7 +13,7 @@ A full-stack digital library web application built with **React + Vite** (fronte
 7. The admin dashboard calculates live totals and circulation aggregates from MongoDB.
 8. AI features call Gemini only from the server, so the API key is never sent to the browser.
 
-## User and Admin Flows
+## User and Admin F
 
 ### Application workflow
 
