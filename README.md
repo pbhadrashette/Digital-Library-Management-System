@@ -43,7 +43,6 @@ flowchart TD
 	Dashboard --> Books[Manage catalog]
 	Dashboard --> Borrows[Review borrow records]
 	Dashboard --> Activity[Review activity logs]
-	Dashboard --> AI[Use optional AI tools]
 ```
 
 ## API Reference
