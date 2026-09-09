@@ -132,7 +132,3 @@ Embed them in this section once captured:
 2. Keep secrets in local environment files and never commit them.
 3. Run `npm run build` and `npm run lint` before opening a pull request.
 4. Explain API, schema, or workflow changes in the pull request description.
-
-## License
-
-No license file is currently included. Add a license before accepting external contributions or distributing the project.
