@@ -44,7 +44,6 @@ flowchart TD
 	Dashboard --> Borrows[Review borrow records]
 	Dashboard --> Activity[Review activity logs]
 	Dashboard --> AI[Use optional AI tools]
-	Users --> Log[Write activity log]
 ```
 
 ## API Reference
