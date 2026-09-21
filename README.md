@@ -42,7 +42,6 @@ flowchart TD
 	Dashboard --> Users[Manage users]
 	Dashboard --> Books[Manage catalog]
 	Dashboard --> Borrows[Review borrow records]
-	Dashboard --> Activity[Review activity logs]
 ```
 
 ## API Reference
