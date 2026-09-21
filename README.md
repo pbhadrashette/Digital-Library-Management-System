@@ -32,13 +32,7 @@ flowchart TD
 	Return --> Available[Book becomes available]
 ```
 
-### Admin workflow
-
-```mermaid
-flowchart TD
-	Login[Admin login] --> Guard{isAdmin = true?}
-	Guard -- No --> Denied[Return 403 access denied]
-	Guard -- Yes --> Dashboard[Admin dashboar
+### Admin workfl
 ```
 
 ## API Reference
