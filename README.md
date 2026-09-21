@@ -38,10 +38,7 @@ flowchart TD
 flowchart TD
 	Login[Admin login] --> Guard{isAdmin = true?}
 	Guard -- No --> Denied[Return 403 access denied]
-	Guard -- Yes --> Dashboard[Admin dashboard]
-	Dashboard --> Users[Manage users]
-	Dashboard --> Books[Manage catalog]
-	Dashboard --> Borrows[Review borrow records]
+	Guard -- Yes --> Dashboard[Admin dashboar
 ```
 
 ## API Reference
