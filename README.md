@@ -14,7 +14,6 @@ A full-stack digital library web application built with **React + Vite** (fronte
 8. AI features call Gemini only from the server, so the API key is never sent to the browser.
 
 ### Application workflow
-
 ```mermaid
 flowchart TD
 	Start[Open application] --> Session{Saved session?}
