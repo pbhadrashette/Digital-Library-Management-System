@@ -29,11 +29,7 @@ flowchart TD
 	Home --> Favorites[Manage favorites]
 	Home --> MyBooks[View borrowed books]
 	MyBooks --> Return[Return book]
-	Return --> Available[Book becomes available]
-```
-
-### Admin workfl
-```
+	Return --> Available[Book becomes availabl
 
 ## API Reference
 
