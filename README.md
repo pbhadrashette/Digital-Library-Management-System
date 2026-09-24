@@ -82,8 +82,7 @@ Run the available checks from the repository root:
 
 ```bash
 npm run build
-npm run lint
-```
+
 
 The build verifies that the React production bundle can be generated. The linter checks JavaScript and JSX for common problems. An integration test suite and API contract tests are recommended future additions.
 | Screenshot | Suggested filename | What it should show |
