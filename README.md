@@ -10,8 +10,7 @@ A full-stack digital library web application built with **React + Vite** (fronte
 4. MongoDB stores users, books, borrow records, favorites, notifications, and admin activity logs.
 5. Borrowing changes a book from `Available` to `Borrowed` and creates a 14-day borrow record.
 6. Returning a book changes the record to `Returned` and restores the book to `Available`.
-7. The admin dashboard calculates live totals and circulation aggregates from MongoDB.
-8. AI features call Gemini only from the server, so the API key is never sent to the browser.
+7. The admin dashboard calculates live totals and circulation aggregates from MongoDB
 
 ### Application workflow
 ```mermaid
