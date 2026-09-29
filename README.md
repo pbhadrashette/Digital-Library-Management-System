@@ -113,4 +113,3 @@ Embed them in this section once captured:
 1. Create a feature branch.
 2. Keep secrets in local environment files and never commit them.
 3. Run `npm run build` and `npm run lint` before opening a pull request.
-4. Explain API, schema, or workflow changes in the pull request description.
