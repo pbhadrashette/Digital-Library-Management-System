@@ -23,9 +23,6 @@ flowchart TD
 	Borrow -- Yes --> Borrowed[Create borrow record and notification]
 	Borrow -- No --> Browse
 	Home --> Favorites[Manage favorites]
-	Home --> MyBooks[View borrowed books]
-	MyBooks --> Return[Return book]
-	Return --> Available[Book becomes availabl
 
 ## API Reference
 
