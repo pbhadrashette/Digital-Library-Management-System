@@ -18,11 +18,7 @@ flowchart TD
 	Session -- Yes --> Home[Load library home]
 	Auth --> Home
 	Home --> Browse[Browse and search catalog]
-	Browse --> Details[Open book details]
-	Details --> Borrow{Book available?}
-	Borrow -- Yes --> Borrowed[Create borrow record and notification]
-	Borrow -- No --> Browse
-	Home --> Favorites[Manage favorites]
+	Browse --> Details[Open book detail
 
 ## API Reference
 
