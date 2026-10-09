@@ -17,8 +17,7 @@ flowchart TD
 	Session -- No --> Auth[Register or log in]
 	Session -- Yes --> Home[Load library home]
 	Auth --> Home
-	Home --> Browse[Browse and search catalog]
-	Browse --> Details[Open book detail
+	Ho
 
 ## API Reference
 
