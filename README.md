@@ -10,14 +10,6 @@ A full-stack digital library web application built with **React + Vite** (fronte
 4. MongoDB stores users, books, borrow records, favorites, notifications, and admin activity logs.
 5. Borrowing changes a book from `Available` to `Borrowed` and creates a 14-day borrow r
 
-### Application workflow
-```mermaid
-flowchart TD
-	Start[Open application] --> Session{Saved session?}
-	Session -- No --> Auth[Register or log in]
-	Session -- Yes --> Home[Load library home]
-	Auth --> Home
-	Ho
 
 ## API Reference
 
