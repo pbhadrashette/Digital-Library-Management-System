@@ -7,7 +7,6 @@ A full-stack digital library web application built with **React + Vite** (fronte
 1. Vite serves the React client during development and builds static assets for production.
 2. The client calls the Express API under `/api` and sends the current user ID in the `x-user-id` header.
 3. Express validates request data, applies member or admin authorization, and executes Mongoose queries.
-4. MongoDB stores users, books, borrow records, favorites, notifications, and admin activity logs
 
 ## API Reference
 
