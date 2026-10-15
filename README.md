@@ -2,8 +2,6 @@
 
 A full-stack digital library web application built with **React + Vite** (frontend) and **Node.js + Express + MongoDB** (backend).
 
-## How the Applica
-
 The base URL is `http://localhost:5000/api` in local development. Protected member endpoints expect `x-user-id`; admin endpoints additionally require that the referenced user has `isAdmin: true`.
 
 ### Authentication
