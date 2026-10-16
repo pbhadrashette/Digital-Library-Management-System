@@ -12,7 +12,6 @@ The base URL is `http://localhost:5000/api` in local development. Protected memb
 | POST | `/auth/login` | Public | Authenticate a member or administrator |
 | GET | `/auth/me` | Member | Restore the current user |
 | POST | `/auth/send-otp` | Public | Generate an OTP for password reset |
-| POST | `/auth/verify-otp` | Public | Verify a password-reset OTP |
 ### Member operations
 
 | Method | Endpoint | Description |
