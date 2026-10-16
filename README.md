@@ -39,7 +39,7 @@ The base URL is `http://localhost:5000/api` in local development. Protected memb
 | POST | `/admin/ai/generate-description` | Generate a book description |
 | POST | `/admin/ai/recommend-category` | Suggest a catalog category |
 | POST | `/admin/ai/chat` | Ask the library admin assistant a question |
-| GET | `/admin/ai/insights` | Generate a library health summary |
+| GET | 
 
 ## Testing and Quality Checks
 
