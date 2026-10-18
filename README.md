@@ -30,8 +30,7 @@ The base URL is `http://localhost:5000/api` in local development. Protected memb
 
 ### AI operations
 
-| Method | Endpoint | Description |
-| --- | --- | --- |
+| Method | Endpoint | Description 
 ## Testing and Quality Checks
 
 Run the available checks from the repository root:
