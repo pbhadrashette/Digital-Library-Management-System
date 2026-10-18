@@ -32,7 +32,6 @@ The base URL is `http://localhost:5000/api` in local development. Protected memb
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
-| POST | `/admin/ai/generate-description` | Generate a book description |
 ## Testing and Quality Checks
 
 Run the available checks from the repository root:
