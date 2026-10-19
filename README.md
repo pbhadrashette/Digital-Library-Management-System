@@ -28,9 +28,6 @@ The base URL is `http://localhost:5000/api` in local development. Protected memb
 | PUT | `/notifications/:id/read` | Mark one notification as read |
 | PUT | `/notifications/read-all` | Mark all notifications as read |
 
-### AI operations
-
-| Method | Endpoint | Description 
 ## Testing and Quality Checks
 
 Run the available checks from the repository root:
