@@ -46,8 +46,7 @@ The build verifies that the React production bundle can be generated. The linter
 
 Embed them in this section once captured:
 
-```markdown
-![Library home](docs/screenshots/library-home.png)
+```markdow
 ## Future Enhancements
 
 - Migrate authentication to secure cookie-based sessions with refresh-token rotation.
