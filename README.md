@@ -13,7 +13,6 @@ The base URL is `http://localhost:5000/api` in local development. Protected memb
 | GET | `/auth/me` | Member | Restore the current user |
 | POST | `/auth/send-otp` | Public | Generate an OTP for password reset |
 ### Member operations
-
 | Method | Endpoint | Description |
 | --- | --- | --- |
 | GET | `/books` | List books sorted by numeric book ID |
@@ -49,9 +48,6 @@ Embed them in this section once captured:
 
 ```markdown
 ![Library home](docs/screenshots/library-home.png)
-![Admin dashboard](docs/screenshots/admin-dashboard.png)
-```
-
 ## Future Enhancements
 
 - Migrate authentication to secure cookie-based sessions with refresh-token rotation.
