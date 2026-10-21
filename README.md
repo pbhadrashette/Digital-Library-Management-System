@@ -42,11 +42,7 @@ The build verifies that the React production bundle can be generated. The linter
 | Book details | `book-details.png` | Metadata, availability, borrow, and favorite actions |
 | My books | `my-books.png` | Active borrow records, due dates, and return action |
 | Admin dashboard | `admin-dashboard.png` | Summary cards, circulation metrics, and charts |
-| Admin catalog | `admin-books.png` | Book management table and create/edit form |
-
-Embed them in this section once captured:
-
-```markdow
+| Admin catalog | `admin-books.png` | Book management table and create/edit form
 ## Future Enhancements
 
 - Migrate authentication to secure cookie-based sessions with refresh-token rotation.
