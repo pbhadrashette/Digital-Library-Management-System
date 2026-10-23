@@ -39,7 +39,6 @@ The build verifies that the React production bundle can be generated. The linter
 | Screenshot | Suggested filename | What it should show |
 | --- | --- | --- |
 | Library home | `library-home.png` | Catalog hero, search, categories, and featured books |
-| Book details | `book-details.png` | Metadata, availability, borrow, and favorite actions |
 ## Future Enhancements
 
 - Migrate authentication to secure cookie-based sessions with refresh-token rotation.
