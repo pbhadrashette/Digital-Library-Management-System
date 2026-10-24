@@ -46,7 +46,6 @@ The build verifies that the React production bundle can be generated. The linter
 - Add email delivery for OTPs, receipts, and overdue notices.
 - Add Docker and Docker Compose configurations for repeatable local setup.
 - Add CI workflows for linting, builds, dependency auditing, and deployment.
-- Add image upload storage with validation and content scanning.
 ## Contributing
 
 1. Create a feature branch.
