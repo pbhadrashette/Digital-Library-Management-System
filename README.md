@@ -48,9 +48,6 @@ The build verifies that the React production bundle can be generated. The linter
 - Add CI workflows for linting, builds, dependency auditing, and deployment.
 - Add image upload storage with validation and content scanning.
 - Add fine-grained roles such as librarian, catalog editor, and reporting-only administrator.
-- Add accessibility audits, keyboard navigation tests, and internationalization.
-- Add observability with structured logs, health checks, metrics, and alerting.
-
 ## Contributing
 
 1. Create a feature branch.
