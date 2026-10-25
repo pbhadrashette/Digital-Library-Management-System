@@ -44,7 +44,6 @@ The build verifies that the React production bundle can be generated. The linter
 - Add book search indexing, server-side filtering, and richer pagination.
 - Add reservation queues and automatic due-date reminders.
 - Add email delivery for OTPs, receipts, and overdue notices.
-- Add Docker and Docker Compose configurations for repeatable local setup.
 ## Contributing
 
 1. Create a feature branch.
