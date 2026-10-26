@@ -43,7 +43,6 @@ The build verifies that the React production bundle can be generated. The linter
 - Add automated unit, integration, and end-to-end tests.
 - Add book search indexing, server-side filtering, and richer pagination.
 - Add reservation queues and automatic due-date reminders.
-- Add email delivery for OTPs, receipts, and overdue notices.
 ## Contributing
 
 1. Create a feature branch.
