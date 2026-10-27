@@ -41,7 +41,6 @@ The build verifies that the React production bundle can be generated. The linter
 - Migrate authentication to secure cookie-based sessions with refresh-token rotation.
 - Use Argon2id or bcrypt with password policy and account lockout controls.
 - Add automated unit, integration, and end-to-end tests.
-- Add book search indexing, server-side filtering, and richer pagination.
 ## Contributing
 
 1. Create a feature branch.
