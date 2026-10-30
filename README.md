@@ -42,5 +42,4 @@ The build verifies that the React production bundle can be generated. The linter
 ## Contributing
 
 1. Create a feature branch.
-2. Keep secrets in local environment files and never commit them.
-3. Run `npm run build` and `npm run lint` before opening a pull request.
+2. Keep secrets in local environment files and never commit the
